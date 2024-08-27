@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web to Lead</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
 </head>
 <body>    
@@ -15,6 +16,8 @@
         <input type=hidden name="oid" value="00D5j00000D281K">
         <input type=hidden name="retURL" value="https://190031754-vamsi.github.io/web-to-lead/thanks.html">
         <input type=hidden name="Lead_Date__c" class="outputdate">
+        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadFormReCaptcha","fallback":"true","orgId":"00D5j00000D281K","ts":""}'>
+
 
 
         <label for="first_name">First Name</label>
@@ -37,6 +40,9 @@
 
         <input type="submit" name="submit" class="submitButton">
 
+        <div class="g-recaptcha" data-sitekey="6Lc_KTAqAAAAAEzhumw7NwW-yhyRUrfi9hLZqvHj"></div>
+        <br>
+        
     </form>    
 </body>
 </html>
